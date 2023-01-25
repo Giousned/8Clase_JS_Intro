@@ -21,13 +21,49 @@
 // exampleFunction(helloWorld);
 
 
+// const addTwoNumbers = (firstNumber,secondNumber) => {
+//     const result = firstNumber + secondNumber;
+//     return result;
+// };
+
+// console.log(addTwoNumbers(2,5));
+
+// const printAWord = word => {
+//     console.log(word);
+//     };
+
+// printAWord('hello');
+
+// const printAWord = word => console.log(word);
+
+// printAWord('hello');
+
+
 // EJERCICIOS
 
 // 1. Escribe una función que imprima la suma de dos números
 // proporcionados como parámetros
 
-// 2. Escribe una función que imprima un número aleatorio, de 1
+const addTwoNumbers = (firstNumber,secondNumber) => {
+    const result = firstNumber + secondNumber;
+    console.log(result);
+}
+
+addTwoNumbers(5,2);
+
+const addTwoNumbers2 = (firstNumber,secondNumber) => console.log(firstNumber+secondNumber);
+
+addTwoNumbers2(5,2);
+
+// 2. Escribe una función que imprima un número entero aleatorio, de 1
 // hasta el rango proporcionado
+
+const numberRandom = numero => {
+    const result = Math.floor(Math.random() * numero + 1);
+    console.log(result);
+}
+
+numberRandom(5);
 
 // ---
 
@@ -47,6 +83,15 @@
 
 // 1. Retomando la función que genera números aleatorios, haz que retorne
 // el resultado, no que lo imprima en consola
+
+const numberRandom2 = numero => {
+    const result = Math.floor(Math.random() * numero + 1);
+    return result;
+}
+console.log(numberRandom2(20));
+
+const numberRandom3 = numero => result = Math.floor(Math.random() * numero + 1);
+console.log(numberRandom3(2));
 
 // IMPORTANTE
 // 1. Debemos tratar de que nuestras funciones solo cumplan un cometido

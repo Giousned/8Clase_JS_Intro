@@ -1,4 +1,4 @@
-// LAS FUNCIONES SON CONTENEDORES DE VALORES
+// LAS VARIABLES SON CONTENEDORES DE VALORES
 // 1. Debemos definirlas para poder utilizarlas.
 // 2. A continuación, podemos asignarles un valor
 
