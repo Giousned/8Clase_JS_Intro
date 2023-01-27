@@ -121,16 +121,63 @@ console.log(numberRandom3(2));
 // 1. Escribe una arrow function que imprima en la consola el parámetro
 // que le proporciones
 
+const imprimir = parametro => console.log(parametro);
+imprimir('Hello');
+
 // 2. Escribe una arrow function que sume dos números proporcionados
+
+const suma = (num1,num2) => operacion = num1+num2;                          // CORRECTA
+console.log(suma(10,100));
+
+const suma2 = (num1,num2) => console.log(operacion = num1+num2);            // PORQUE ESTA IMPRIME EN CONSOLA
+suma2(100,100);
 
 // 3. Escribe una arrow function que imprima en la consola la multiplicación
 // de dos números proporcionados
 
+const multiplicacion = (num1,num2) => operacion = num1*num2;                // PORQUE ESTA SOLO DEVUELVE NO IMPRIME EN CONSOLA
+console.log(multiplicacion(10,800));
+
+const multiplicacion2 = (num1,num2) => console.log(operacion = num1*num2);          // CORRECTA
+multiplicacion2(5,100);
+
 // 4. Escribe una arrow function que reste dos números proporcionados
+
+const resta = (num1,num2) => operacion = num1-num2;                         // CORRECTA
+console.log(resta(10,100));
+
+const resta2 = (num1,num2) => console.log(operacion = num1-num2);           // PORQUE ESTA IMPRIME EN CONSOLA
+resta2(1000,50);
 
 // 5. Escribe una arrow function que multiplique dos números proporcionados
 
+const multiplicacion3 = (num1,num2) => operacion = num1*num2;                        // CORRECTA
+console.log(multiplicacion3(5,400));
+
+const multiplicacion4 = (num1,num2) => console.log(operacion = num1*num2);          // PORQUE ESTA IMPRIME EN CONSOLA
+multiplicacion4(25,8100);
+
 // 6. Escribe una arrow function que divida dos números proporcionados
+
+const division = (num1,num2) => operacion = num1/num2;                          // CORRECTA
+console.log(division(25,1.5));
+
+const division2 = (num1,num2) => console.log(operacion = num1/num2);          // PORQUE ESTA IMPRIME EN CONSOLA
+division2(578,32);
 
 // 7. Escribe una arrow function que reciba dos números y una operación,
 // ejecute la operación e imprima el resultado en pantalla
+
+const operacionNumerosYSigno = (num1,num2,signo) => {
+
+    if (signo === '+') console.log(operacion = suma(num1,num2));
+    if (signo === '-') console.log(operacion = resta(num1,num2));
+    if (signo === '*') console.log(operacion = multiplicacion(num1,num2));              // CORRECTA
+    if (signo === '/') console.log(operacion = division(num1,num2));
+    
+}
+
+operacionNumerosYSigno(578,32,'+');
+operacionNumerosYSigno(578,32,'-');
+operacionNumerosYSigno(578,32,'*');
+operacionNumerosYSigno(578,32,'/');
